@@ -1,0 +1,352 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Noto+Sans+TC:wght@500&family=Paytone+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Titillium+Web&display=swap");
+
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+// Animate CSS
+@import "~animate.css/animate.css";
+
+// Custom CSS
+html {
+    overflow-x: hidden;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+@media (max-width: 992px) {
+    .mobileMenu {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+        width: 70%;
+        position: fixed;
+        top: 0px;
+        bottom: 0;
+        margin: auto;
+        left: 0;
+        -webkit-transition: all ease 0.25s;
+        transition: all ease 0.25s;
+    }
+
+    .mobileMenu.open {
+        -webkit-transform: translateX(0%);
+        transform: translateX(0%);
+    }
+
+    .mobileMenu .navbar-nav {
+        overflow-y: auto;
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: none;
+    }
+
+    .overlay.open {
+        display: block;
+        z-index: 1029;
+    }
+}
+
+.nav-item {
+    font-size: 22px;
+}
+
+header .carousel-inner .item {
+    height: 100vh;
+}
+
+.carousel {
+    position: relative;
+    margin-top: 68px;
+}
+
+.carousel-control.right {
+    background-image: none;
+}
+
+.carousel-indicators li {
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+}
+
+.carousel-caption {
+    font-family: "Paytone One", sans-serif;
+}
+
+.item2 {
+    background-image: url("/images/banner.jpg");
+    background-size: cover;
+    padding-bottom: 400px;
+}
+
+.cardc {
+    height: 400px;
+    width: 600px;
+    margin-top: 166px;
+    margin-left: 285px;
+}
+
+.txt1 {
+    font-size: 50px;
+    margin-top: 50px;
+    font-family: "Paytone One", sans-serif;
+}
+
+.button1 {
+    background-color: white;
+    color: #1d4d71;
+    border: 2px solid #1d4d71;
+    border-radius: 20px;
+    cursor: pointer;
+    padding: 16px 32px;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+}
+
+.button1:hover {
+    background-color: #1d4d71;
+    color: white;
+}
+
+@media (max-width: 978px) {
+    .item2 {
+        padding: 0px;
+    }
+
+    .cardc {
+        height: auto;
+        width: auto;
+        margin: 5%;
+    }
+
+    .txt1 {
+        font-size: 20px;
+        margin: 0;
+    }
+
+    .button1 {
+        padding: 5px 10px;
+        font-size: 12px;
+    }
+}
+
+.slide1a {
+    font-size: 60px;
+    text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000,
+        -1px -1px 0 #000;
+}
+
+.slide1b {
+    font-size: 35px;
+    text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000,
+        -1px -1px 0 #000;
+}
+
+.slide1c {
+    font-size: 100px;
+    color: #f5f5f5;
+
+    text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191,
+        1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191,
+        1px 7px 1px #919191, 1px 8px 1px #919191, 1px 9px 1px #919191,
+        1px 10px 1px #919191, 1px 18px 6px rgba(16, 16, 16, 0.4),
+        1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2),
+        1px 30px 60px rgba(16, 16, 16, 0.4);
+}
+
+.slide1 {
+    padding-bottom: 200px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 978px) {
+    .slide1a {
+        font-size: 25px;
+    }
+
+    .slide1b {
+        font-size: 20px;
+    }
+
+    .slide1c {
+        font-size: 50px;
+    }
+
+    .slide1 {
+        padding: 0;
+    }
+}
+
+.slide3 {
+    padding-bottom: 250px;
+    text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000,
+        -1px -1px 0 #000;
+}
+
+.slide3a {
+    font-size: 40px;
+}
+
+.slide3b {
+    font-size: 75px;
+}
+
+@media (max-width: 978px) {
+    .slide3 {
+        padding-bottom: 50px;
+    }
+
+    .slide3a {
+        font-size: 15px;
+    }
+
+    .slide3b {
+        font-size: 35px;
+    }
+}
+
+.carousel-inner {
+    max-height: 700px;
+}
+
+.jumbotron {
+    margin-top: 55px;
+    margin-bottom: 2rem;
+    background-image: url("/images/contact.jpg");
+}
+
+.heading {
+    color: #3c444b;
+}
+
+.row-content {
+    margin: 0px auto;
+    padding: 50px 0px;
+    border-bottom: 1px ridge;
+    border-top: 1px ridge;
+    min-height: 400px;
+}
+
+.bd-bg {
+    background-image: url("/images/border-background.jpg");
+    background-size: cover;
+}
+
+.btn {
+    background-color: #1d4d71;
+    border-radius: 50px;
+}
+
+.btn-bg {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.btn-connect {
+    color: #fff;
+    background-color: #1d4d71;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+    cursor: pointer;
+}
+
+.btn-connect:hover {
+    background-color: #c0cad9;
+}
+
+.btn-connect:active {
+    background-color: #1d4d71;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+.card {
+    border: none;
+}
+
+.form-control {
+    border: none;
+    background-color: #c0cad966;
+    color: black;
+}
+
+.table {
+    font-size: 20px;
+}
+
+.bg-service {
+    min-height: 230px;
+    margin-top: 65px;
+    background: #43c6ac;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #191654, #43c6ac);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #191654, #43c6ac);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.bg-service2 {
+    background-color: #c0cad966;
+    padding: 50px 20px 30px 20px;
+}
+
+.iptvfont {
+    font-family: "Noto Sans TC", sans-serif;
+}
+
+.servicefont {
+    font-family: "Paytone One", sans-serif;
+}
+
+.text {
+    position: absolute;
+    font-size: 50px;
+    font-family: "Paytone One", sans-serif;
+    color: #f5f5f5;
+
+    text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191,
+        1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191,
+        1px 7px 1px #919191, 1px 8px 1px #919191, 1px 9px 1px #919191,
+        1px 10px 1px #919191, 1px 18px 6px rgba(16, 16, 16, 0.4),
+        1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2),
+        1px 30px 60px rgba(16, 16, 16, 0.4);
+}
+
+@media (max-width: 978px) {
+    .text {
+        font-size: 30px;
+    }
+}
+
+.tagline {
+    font-size: 40px;
+    color: #3c444b;
+    font-family: "Great Vibes", cursive;
+}
+
+@media (max-width: 978px) {
+    .tagline {
+        overflow: hidden;
+        font-size: 19px;
+    }
+}
+
+.footer {
+    margin-top: 50px;
+    padding: 20px 0px;
+    background-color: #c0cad980;
+}
